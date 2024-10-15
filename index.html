@@ -1,0 +1,369 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Liju Thomas's website">
+  <meta name="author" content="Liju Thomas">
+  <link rel="icon" href="https://avatars.githubusercontent.com/u/34997667?v=4">
+  <title>Liju Thomas (@lijuthomas_)</title>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+  <style>
+    @import url("https://fonts.googleapis.com/css2?family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap");
+
+    html,
+    body {
+      min-height: 100vh;
+      font-family: "Space Mono", monospace;
+      font-size: 1em;
+      /* Reduced the font size slightly */
+      max-width: 61rem;
+      margin-left: auto;
+      margin-right: auto;
+      padding: 0 2rem;
+      background-color: #f4f4f9;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    .title {
+      font-size: 150%;
+      /* Reduced the title size slightly */
+      font-weight: bold;
+      padding-top: 0.2em;
+      text-align: left;
+      color: #666;
+    }
+
+    .date {
+      color: #666;
+    }
+
+    .content {
+      margin-top: 4rem;
+      margin-bottom: 4rem;
+      max-width: 100%;
+      width: 100%;
+    }
+
+    header {
+      margin: 0 auto 3rem;
+      text-align: left;
+      width: 100%;
+    }
+
+    ul {
+      list-style-type: none;
+      padding: 0;
+    }
+
+    li {
+      margin-bottom: 1rem;
+    }
+
+    .makka-pakka {
+      border-radius: 0.5rem;
+      position: absolute;
+      top: 4em;
+      right: 20em;
+      z-index: 1;
+      height: 20%;
+    }
+
+    @media (max-width: 1024px) {
+      .makka-pakka {
+        display: none;
+      }
+    }
+
+    /* Tooltip styling */
+    [data-tooltip]:hover::after {
+      display: block;
+      position: absolute;
+      content: attr(data-tooltip);
+      border: 1px solid black;
+      background: #eee;
+      padding: 0.25em;
+    }
+
+    .tooltip {
+      text-decoration: underline;
+      text-decoration-style: dotted;
+    }
+
+    /* Read More / Read Less styling */
+    .bio-text p,
+    .extended-bio p {
+      font-size: 0.9rem;
+      /* Reduced bio text size */
+      color: #444;
+      margin-bottom: 1rem;
+    }
+
+    #read-more,
+    #read-less {
+      color: #d1a54f;
+      cursor: pointer;
+      font-weight: bold;
+    }
+
+    #read-more:hover,
+    #read-less:hover {
+      color: #c28f42;
+    }
+
+    .extended-bio {
+      display: none;
+      margin-top: 0rem;
+    }
+
+    /* Bio Text width */
+    .bio-text {
+      max-width: 100%;
+      width: 100%;
+    }
+
+    /* Seamless Transition */
+    .bio-container {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      max-width: 100%;
+      width: 100%;
+    }
+
+    /* Spacing for divs */
+    .content,
+    /* .extended-bio, */
+    .social-media,
+    ul {
+      padding: 1rem 0;
+      /* Added padding for better spacing between divs */
+    }
+
+    .bio-text {
+      padding-top: 1rem;
+    }
+
+    .bio-text-wrapper {
+      overflow: hidden;
+      max-height: 200px;
+      transition: max-height 0.3s ease-in-out;
+    }
+
+    .extended-bio-wrapper {
+      max-height: none;
+      overflow: visible;
+    }
+
+    /* Social Media Section */
+    .social-media {
+      margin-top: 3rem;
+      text-align: center;
+    }
+
+    .social-media ul {
+      display: flex;
+      justify-content: center;
+      list-style: none;
+      padding: 0;
+    }
+
+    .social-media ul li {
+      margin: 0 10px;
+    }
+
+    .social-media a {
+      font-size: 1.8rem;
+      /* Reduced social media icon size slightly */
+      color: #666;
+      text-decoration: none;
+    }
+
+    .social-media a:hover {
+      color: #d1a54f;
+    }
+  </style>
+
+</head>
+
+<body>
+  <img src="images/makka-pakka-yes.gif" alt="Makka pakka saying hello" class="makka-pakka">
+  <div class="flex content">
+    <header>
+      <p>
+        <span class="title">
+          <span class="tooltip" data-tooltip="लिजू / Liju">Liju</span>
+          Thomas
+        </span> (<span class="tooltip" data-tooltip="github.com/liju-github">@lijuthomas_</span>)
+      </p>
+      <p></p>
+      <p style="margin-bottom: 25px;">
+        Student @
+        <a href="https://brototype.com/" target="_blank">Brototype</a>
+      </p>
+      <!-- Read More Text -->
+      <div class="bio-text">
+        <p>
+          <span style="font-weight:bold;">A <span style="font-size: 1.2rem;">Full Stack Developer</span></span> with
+          expertise in
+          <span style="color: blue;">Golang</span> and
+          <span style="color: blue;">JavaScript</span>, passionate about building
+          <span style="font-style:italic;">scalable web applications</span>. I'm currently deepening my understanding of
+          <span style="font-weight:bold;">concurrency</span> and
+          <span style="font-weight:bold;">data structures</span> in Golang, while also exploring modern JavaScript
+          libraries
+          like
+          <span style="color: blue;">React</span>. With
+          <span style="font-weight:bold;">1 year of consistent learning</span>, I prioritize writing
+          <span style="text-decoration: underline;">clean, minimalist code</span> and take a
+          <span style="text-decoration: underline;">pragmatic approach</span> to problem-solving.
+          <span id="read-more">Read more</span>
+        </p>
+
+      </div>
+
+      <!-- Bio Text (Initially Hidden) -->
+      <div class="extended-bio">
+        <p>In addition to my backend skills, I enjoy exploring other languages like Rust and Python as hobbies and have
+          a
+          beginner-level understanding of Solidity and Web3.js for Blockchain development. My expertise spans across
+          working
+          with MySQL, PostgreSQL, and MongoDB, providing robust database solutions to scale applications effectively.
+        </p>
+        <p>Though I started my academic journey in Electronics and Communication Engineering (with a modest CGPA and
+          ongoing
+          arrears), I quickly recognized my potential and shifted focus to self-driven learning. This decision led me to
+          upskill continuously, mastering technologies that truly matter for real-world problem-solving.</p>
+        <p>I use Fedora with GNOME as my preferred development environment and I love experimenting with customizations,
+          often
+          breaking my distro in the process but always finding a way to fix it somehow. I also enjoy watching tech
+          YouTube
+          videos to stay updated on the latest trends and emerging technologies.</p>
+        <span id="read-less">Read less</span>
+      </div>
+
+    </header>
+
+    <!-- Projects Section -->
+    <div>
+      <h2>Projects:</h2>
+      <ul>
+        <li>
+          <a href="https://github.com/liju-github/FoodBuddy-API">FoodBuddy-API</a>: Restaurant Aggregator API
+          <span class="date">(July 2024)</span>
+        </li>
+        <li>
+          <a href="https://github.com/liju-github/UserManagementBackend">UserManagementBackend</a>: Public Go Backend
+          <span class="date">(October 2024)</span>
+        </li>
+        <li>
+          <a href="https://github.com/liju-github/OLX-Backend-CleanArch-CRUD">OLX-Backend-CleanArch-CRUD</a>: Go Backend
+          with Clean Architecture
+          <span class="date">(September 2024)</span>
+        </li>
+        <li>
+          <a href="https://github.com/liju-github/OLX-Frontend-React">OLX-Frontend-React</a>: React Frontend for OLX
+          <span class="date">(September 2024)</span>
+        </li>
+        <li>
+          <a href="https://github.com/liju-github/Netflix-React-Firebase">Netflix-React-Firebase</a>: Netflix Clone with
+          React and Firebase
+          <span class="date">(September 2024)</span>
+        </li>
+        <li>
+          <a href="https://github.com/liju-github/Link-Shortner-in-Go">Link Shortener in Go</a>: URL shortener built
+          with Go
+          <span class="date">(July 2024)</span>
+        </li>
+        <li>
+          <a href="https://github.com/liju-github/DiscordCloneWeek2">DiscordClone</a>: Discord clone using HTML/CSS
+          <span class="date">(March 2024)</span>
+        </li>
+        <li>
+          <a href="https://github.com/liju-github/Nothing-Clone">Nothing-Clone</a>: Nothing app clone using HTML/CSS
+          <span class="date">(March 2024)</span>
+        </li>
+        <li>
+          <a href="https://github.com/liju-github/GoogleStore-clone">GoogleStore-clone</a>: Google Store clone built
+          with
+          HTML/CSS
+          <span class="date">(March 2024)</span>
+        </li>
+        <li>
+          <a href="https://github.com/liju-github/ERC20_Tokens_Batch_Sell">ERC20_Tokens_Batch_Sell</a>: Batch sell ERC20
+          tokens
+          <span class="date">(Ongoing)</span>
+        </li>
+      </ul>
+    </div>
+
+    <!-- Documentation Section -->
+    <div>
+      <h2>Project Documentation:</h2>
+      <ul>
+        <li>
+          <a href="https://documenter.getpostman.com/view/32055383/2sA3e488Sh">FoodBuddy</a>:
+          API Documentation for my Backend Application
+          <span class="date">(July 2024)</span>
+        </li>
+      </ul>
+    </div>
+
+    <!-- Medium Articles Section -->
+    <div>
+      <h2>Medium Articles:</h2>
+      <ul>
+        <li>
+          <a
+            href="https://medium.com/@lijuthomasliju03/denos-approach-to-simplicity-aligning-with-go-s-philosophy-487a48fa3d2b">Simplicity
+            in Deno</a>:
+          Approach to simplicity aligning with Go's philosophy
+          <span class="date">(October 2024)</span>
+        </li>
+        <li>
+          <a
+            href="https://medium.com/@lijuthomasliju03/serverless-and-database-optimization-developer-decision-making-7c4f8ee1b40b">SHA256
+            in Blockchain</a>: Unveiling the Power of SHA-256 Hashing in Blockchain
+          <span class="date">(May 2023)</span>
+        </li>
+      </ul>
+    </div>
+
+    <!-- Social Media Section -->
+    <div class="social-media">
+      <h2>Connect with me:</h2>
+      <ul>
+        <li><a href="https://www.linkedin.com/in/liju-thomas-13ba6524b/" target="_blank"><i
+              class="fab fa-linkedin"></i></a></li>
+        <li><a href="https://github.com/liju-github" target="_blank"><i class="fab fa-github"></i></a></li>
+        <li><a href="https://www.instagram.com/lijuthomas__/" target="_blank"><i class="fab fa-instagram"></i></a></li>
+        <li><a href="https://twitter.com/lijuthomas_" target="_blank"><i class="fab fa-twitter"></i></a></li>
+      </ul>
+    </div>
+  </div>
+
+  <script>
+    // Toggle Read More / Read Less functionality
+    const readMoreButton = document.getElementById('read-more');
+    const readLessButton = document.getElementById('read-less');
+    const extendedBio = document.querySelector('.extended-bio');
+
+    // Show extended bio when "Read More" is clicked
+    readMoreButton.addEventListener('click', function () {
+      extendedBio.style.display = 'block';
+      readMoreButton.style.display = 'none';
+      readLessButton.style.display = 'inline';
+    });
+
+    // Hide extended bio when "Read Less" is clicked
+    readLessButton.addEventListener('click', function () {
+      extendedBio.style.display = 'none';
+      readMoreButton.style.display = 'inline';
+      readLessButton.style.display = 'none';
+    });
+  </script>
+</body>
+
+</html>
