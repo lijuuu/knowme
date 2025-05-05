@@ -180,22 +180,6 @@
       cursor: default;
     }
 
-    .skill-category::after {
-      content: attr(data-desc);
-      position: absolute;
-      left: 0;
-      bottom: -1.2rem;
-      font-size: 0.8rem;
-      font-weight: normal;
-      color: #444;
-      opacity: 0;
-      width: 100%;
-      text-align: left;
-      border-bottom: 1px solid #666;
-      transition: opacity 0.3s ease, transform 0.3s ease;
-      transform: translateY(5px);
-    }
-
     .skill-category:hover::after {
       opacity: 1;
       transform: translateY(0);
@@ -243,19 +227,19 @@
       <h2>Technical Skills</h2>
       <div class="skills-grid">
         <div>
-          <span class="skill-category" data-desc="Building dynamic UIs">Frontend</span>
+          <span class="skill-category">Frontend</span>
           <div class="skill-list">React, TypeScript, JavaScript, Tailwind CSS, Shaden UI, Framer Motion</div>
         </div>
         <div>
-          <span class="skill-category" data-desc="Robust server-side logic">Backend</span>
+          <span class="skill-category" >Backend</span>
           <div class="skill-list">Go, Gin, Node.js, gRPC, REST APIs, Supabase, Firebase </div>
         </div>
         <div>
-          <span class="skill-category" data-desc="Scalable data storage">Databases</span>
+          <span class="skill-category" >Databases</span>
           <div class="skill-list">PostgreSQL, MongoDB, MySQL, SQLite, Redis, Neon4j</div>
         </div>
         <div>
-          <span class="skill-category" data-desc="Deployment & monitoring">DevOps & Tools</span>
+          <span class="skill-category" >DevOps & Tools</span>
           <div class="skill-list">Docker, Kubernetes, GCP, AWS, GitHub Actions, Postman, k6, NATS, Zap, Betterstack, Grafana, Stripe, Razorpay, Web3.js</div>
         </div>
       </div>
