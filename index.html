@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="description" content="Liju Thomas - Full Stack Developer skilled in Go, TypeScript, React, and microservices, building scalable web applications.">
   <meta name="author" content="Liju Thomas">
-  <link rel="icon" href="https://avatars.githubusercontent.com/u/34997667?v=4">
+  <link	rel="icon" href="https://avatars.githubusercontent.com/u/34997667?v=4">
   <title>Liju Thomas - Full Stack Developer</title>
   <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
   <style>
@@ -40,7 +40,7 @@
 
     .content {
       margin-top: 4rem;
-      margin-bottom: 4rem;
+      margin-bottom: 4/terraform destroyrem;
       max-width: 100%;
       width: 100%;
     }
@@ -156,6 +156,37 @@
       color: #d1a54f;
     }
 
+    /* Tooltip Styling */
+    .tooltip {
+      position: relative;
+      cursor: pointer;
+      text-decoration: underline;
+      text-decoration-style: dotted;
+    }
+
+    .tooltip::after {
+      content: attr(data-tooltip);
+      position: absolute;
+      bottom: 100%;
+      left: 50%;
+      transform: translateX(-50%);
+      background-color: #333;
+      color: #fff;
+      padding: 0.5rem;
+      border-radius: 0.3rem;
+      font-size: 0.8rem;
+      white-space: nowrap;
+      z-index: 10;
+      opacity: 0;
+      visibility: hidden;
+      transition: opacity 0.2s ease, visibility 0.2s ease;
+    }
+
+    .tooltip:hover::after {
+      opacity: 1;
+      visibility: visible;
+    }
+
     /* Skills Section Styling */
     .skills-section {
       margin: 2rem 0;
@@ -232,15 +263,15 @@
           <div class="skill-list">React, TypeScript, JavaScript, Tailwind CSS, Shaden UI, Framer Motion</div>
         </div>
         <div>
-          <span class="skill-category" >Backend</span>
+          <span class="skill-category">Backend</span>
           <div class="skill-list">Go, Gin, Node.js, gRPC, REST APIs, Supabase, Firebase </div>
         </div>
         <div>
-          <span class="skill-category" >Databases</span>
+          <span class="skill-category">Databases</span>
           <div class="skill-list">PostgreSQL, MongoDB, MySQL, SQLite, Redis, Neon4j</div>
         </div>
         <div>
-          <span class="skill-category" >DevOps & Tools</span>
+          <span class="skill-category">DevOps & Tools</span>
           <div class="skill-list">Docker, Kubernetes, GCP, AWS, GitHub Actions, Postman, k6, NATS, Zap, Betterstack, Grafana, Stripe, Razorpay, Web3.js</div>
         </div>
       </div>
