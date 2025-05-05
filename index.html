@@ -3,10 +3,10 @@
 
 <head>
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="Liju Thomas's website">
+  <meta name="description" content="Liju Thomas - Full Stack Developer skilled in Go, TypeScript, React, and microservices, building scalable web applications.">
   <meta name="author" content="Liju Thomas">
   <link rel="icon" href="https://avatars.githubusercontent.com/u/34997667?v=4">
-  <title>Liju Thomas (@lijuthomas_)</title>
+  <title>Liju Thomas - Full Stack Developer</title>
   <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
   <style>
     @import url("https://fonts.googleapis.com/css2?family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap");
@@ -16,7 +16,6 @@
       min-height: 100vh;
       font-family: "Space Mono", monospace;
       font-size: 1em;
-      /* Reduced the font size slightly */
       max-width: 61rem;
       margin-left: auto;
       margin-right: auto;
@@ -29,7 +28,6 @@
 
     .title {
       font-size: 150%;
-      /* Reduced the title size slightly */
       font-weight: bold;
       padding-top: 0.2em;
       text-align: left;
@@ -77,26 +75,9 @@
       }
     }
 
-    /* Tooltip styling */
-    [data-tooltip]:hover::after {
-      display: block;
-      position: absolute;
-      content: attr(data-tooltip);
-      border: 1px solid black;
-      background: #eee;
-      padding: 0.25em;
-    }
-
-    .tooltip {
-      text-decoration: underline;
-      text-decoration-style: dotted;
-    }
-
-    /* Read More / Read Less styling */
     .bio-text p,
     .extended-bio p {
       font-size: 0.9rem;
-      /* Reduced bio text size */
       color: #444;
       margin-bottom: 1rem;
     }
@@ -118,13 +99,12 @@
       margin-top: 0rem;
     }
 
-    /* Bio Text width */
     .bio-text {
       max-width: 100%;
       width: 100%;
+      padding-top: 1rem;
     }
 
-    /* Seamless Transition */
     .bio-container {
       display: flex;
       flex-direction: column;
@@ -133,17 +113,10 @@
       width: 100%;
     }
 
-    /* Spacing for divs */
     .content,
-    /* .extended-bio, */
     .social-media,
     ul {
       padding: 1rem 0;
-      /* Added padding for better spacing between divs */
-    }
-
-    .bio-text {
-      padding-top: 1rem;
     }
 
     .bio-text-wrapper {
@@ -157,7 +130,6 @@
       overflow: visible;
     }
 
-    /* Social Media Section */
     .social-media {
       margin-top: 3rem;
       text-align: center;
@@ -176,7 +148,6 @@
 
     .social-media a {
       font-size: 1.8rem;
-      /* Reduced social media icon size slightly */
       color: #666;
       text-decoration: none;
     }
@@ -184,8 +155,65 @@
     .social-media a:hover {
       color: #d1a54f;
     }
-  </style>
 
+    /* Skills Section Styling */
+    .skills-section {
+      margin: 2rem 0;
+    }
+
+    .skills-section h2 {
+      font-size: 1.2rem;
+      font-weight: bold;
+      color: #666;
+      margin-bottom: 1rem;
+    }
+
+    .skills-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 1rem;
+    }
+
+    .skill-category {
+      position: relative;
+      font-weight: bold;
+      cursor: default;
+    }
+
+    .skill-category::after {
+      content: attr(data-desc);
+      position: absolute;
+      left: 0;
+      bottom: -1.2rem;
+      font-size: 0.8rem;
+      font-weight: normal;
+      color: #444;
+      opacity: 0;
+      width: 100%;
+      text-align: left;
+      border-bottom: 1px solid #666;
+      transition: opacity 0.3s ease, transform 0.3s ease;
+      transform: translateY(5px);
+    }
+
+    .skill-category:hover::after {
+      opacity: 1;
+      transform: translateY(0);
+    }
+
+    .skill-list {
+      font-size: 0.9rem;
+      color: #444;
+      margin-top: 0.5rem;
+    }
+
+    /* Contributions and Accomplishments Styling */
+    .contrib-item,
+    .accomplish-item {
+      font-weight: bold;
+      letter-spacing: 0.05em;
+    }
+  </style>
 </head>
 
 <body>
@@ -193,83 +221,76 @@
   <div class="flex content">
     <header>
       <p>
-        <span class="title">
-          <span class="tooltip" data-tooltip="लिजू / Liju">Liju</span>
-          Thomas
-        </span> (<span class="tooltip" data-tooltip="github.com/lijuuu">@lijuthomas_</span>)
+        <span class="title">Liju Thomas</span> (<a href="https://github.com/lijuuu" style="color: #666; text-decoration: underline dotted;">@lijuthomas_</a>)
       </p>
-      <p></p>
       <p style="margin-bottom: 25px;">
-        Learning @
-        <a href="https://brototype.com/" target="_blank">Brototype</a>
+        Builder shaped by chaos
       </p>
-      <!-- Read More Text -->
       <div class="bio-text">
         <p>
-          <span style="font-weight:bold;">A <span style="font-size: 1.2rem;">Full Stack Developer</span></span> with
-          expertise
-          in
-          <span style="color: blue;">Golang</span> and <span style="color: blue;">JavaScript</span>, passionate about
-          building
-          <span style="font-style:italic;">scalable web applications</span>. I'm currently deepening my understanding of
-          <span style="font-weight:bold;">concurrency</span> and <span style="font-weight:bold;">data structures</span>
-          in
-          Golang, while also exploring modern JavaScript
-          libraries like <span style="color: blue;">React</span>. With <span style="font-weight:bold;">1 year of
-            consistent
-            learning</span>, I prioritize writing
-          <span style="text-decoration: underline;">clean, minimalist code</span> and take a
-          <span style="text-decoration: underline;">pragmatic approach</span> to problem-solving.
-          I have experience working with <span style="font-weight:bold;">microservices architecture</span>, leveraging
-          tools
-          like
-          <span style="color: blue;">gRPC</span>, <span style="color: blue;">Docker</span>, and <span
-            style="color: blue;">Kubernetes</span> to build robust, distributed systems.
-          <span id="read-more">Read more</span>
+          Full Stack Developer specializing in Go, TypeScript, and React, with a focus on building scalable web applications and microservices. Experienced in Docker, Kubernetes, and gRPC, I deliver reliable, high-performance systems. Committed to clean code and efficient architecture, I thrive in collaborative environments, solving real-world problems through self-driven learning and pragmatic approaches. <span id="read-more">Read more</span>
         </p>
-
-
       </div>
-
-      <!-- Bio Text (Initially Hidden) -->
       <div class="extended-bio">
-        <p>In addition to my backend skills, I enjoy exploring other languages and have
-          a
-          beginner-level understanding of Solidity and Web3.js for Blockchain development. My expertise spans across
-          working
-          with MySQL, PostgreSQL, and MongoDB, providing robust database solutions to scale applications effectively.
-        </p>
-        <p>Though I started my academic journey in Electronics and Communication Engineering (with a modest CGPA and
-          ongoing
-          arrears), I quickly recognized my potential and shifted focus to self-driven learning. This decision led me to
-          upskill continuously, mastering technologies that truly matter for real-world problem-solving.</p>
-        <p>I use Fedora with GNOME as my preferred development environment and I love experimenting with customizations,
-          often
-          breaking my distro in the process but always finding a way to fix it somehow. I also enjoy watching tech
-          YouTube
-          videos to stay updated on the latest trends and emerging technologies.</p>
+        <p>My journey began in Electronics and Communication Engineering, but a passion for software development led me to master modern tech stacks through self-learning. I’ve built projects like competitive programming platforms and code execution engines, leveraging tools like NATS, Redis, and AWS.</p>
+        <p>I’m also exploring blockchain with Solidity and Web3.js, and I enjoy experimenting with Fedora GNOME, often tweaking my setup to optimize my workflow. Staying updated via tech YouTube keeps me inspired to tackle new challenges.</p>
         <span id="read-less">Read less</span>
       </div>
-
     </header>
+
+    <!-- Skills Section -->
+    <div class="skills-section">
+      <h2>Technical Skills</h2>
+      <div class="skills-grid">
+        <div>
+          <span class="skill-category" data-desc="Building dynamic UIs">Frontend</span>
+          <div class="skill-list">React, TypeScript, JavaScript, Tailwind CSS, Shaden UI, Framer Motion</div>
+        </div>
+        <div>
+          <span class="skill-category" data-desc="Robust server-side logic">Backend</span>
+          <div class="skill-list">Go, Gin, Node.js, gRPC, REST APIs, Supabase, Firebase </div>
+        </div>
+        <div>
+          <span class="skill-category" data-desc="Scalable data storage">Databases</span>
+          <div class="skill-list">PostgreSQL, MongoDB, MySQL, SQLite, Redis, Neon4j</div>
+        </div>
+        <div>
+          <span class="skill-category" data-desc="Deployment & monitoring">DevOps & Tools</span>
+          <div class="skill-list">Docker, Kubernetes, GCP, AWS, GitHub Actions, Postman, k6, NATS, Zap, Betterstack, Grafana, Stripe, Razorpay, Web3.js</div>
+        </div>
+      </div>
+    </div>
 
     <!-- Projects Section -->
     <div>
-      <h2>Projects:</h2>
+      <h2>Projects</h2>
       <ul>
         <li>
+          <a href="https://zenxbattle.space">zenxbattle</a>: Competitive Programming Platform built with React, TypeScript, and Go. Features coding challenges, real-time chat, and competitive modes with 2FA security.
+          <span class="date">(Feb 2025 - Present)</span>
+        </li>
+        <li>
+          <a href="https://github.com/lijuuu/xcodeEngine">xcodeEngine</a>: High-performance Dockerized code execution engine in Go, supporting multiple languages with low latency.
+          <span class="date">(Feb 2025 - Present)</span>
+        </li>
+        <li>
+          <a href="https://github.com/lijuuu/RedisBoard">RedisBoard</a>: Go library for Redis-backed leaderboards using sorted sets for gaming applications.
+          <span class="date">(Oct 2024 - Present)</span>
+        </li>
+        <li>
+          <a href="https://github.com/lijuuu/AskMe-gRPCApiGateway">AskMe</a>: Microservices-based backend with Go, Gin, MongoDB, and SQLite, using gRPC for communication.
+          <span class="date">(Sep 2024 - Present)</span>
+        </li>
+        <li>
           <a href="https://dsa.lijuu.me/blind75">DSA Tracker</a>: List of DSA Problems
-          using React.Js. I didn't coded this, used AI for it(claude sonnect and V0.dev)
           <span class="date">(January 2025)</span>
         </li>
         <li>
-          <a href="https://github.com/lijuuu/FoodBuddyMicroserviceAPIGateway">FoodBuddy Microservice</a>: A Microservice
-          Project written in Go with the help of Gin Framework integrated with gRPC interservice communication.
+          <a href="https://github.com/lijuuu/FoodBuddyMicroserviceAPIGateway">FoodBuddy Microservice</a>: A Microservice Project written in Go with the help of Gin Framework integrated with gRPC interservice communication.
           <span class="date">(November 2024)</span>
         </li>
         <li>
-          <a href="https://github.com/lijuuu/ivdepaste">ivdepaste(working...)</a>: trying make a better pastebin using
-          nextjs,shacn/ui and typescript
+          <a href="https://github.com/lijuuu/ivdepaste">ivdepaste(working...)</a>: trying make a better pastebin using nextjs,shacn/ui and typescript
           <span class="date">(October 2024)</span>
         </li>
         <li>
@@ -281,13 +302,11 @@
           <span class="date">(October 2024)</span>
         </li>
         <li>
-          <a href="https://github.com/lijuuu/UserManagement-React">UserManagementFrontend</a>: Frontend using
-          React
+          <a href="https://github.com/lijuuu/UserManagement-React">UserManagementFrontend</a>: Frontend using React
           <span class="date">(October 2024)</span>
         </li>
         <li>
-          <a href="https://github.com/lijuuu/OLX-Backend-CleanArch-CRUD">OLX-Backend-CleanArch-CRUD</a>: Go Backend
-          with Clean Architecture
+          <a href="https://github.com/lijuuu/OLX-Backend-CleanArch-CRUD">OLX-Backend-CleanArch-CRUD</a>: Go Backend with Clean Architecture
           <span class="date">(September 2024)</span>
         </li>
         <li>
@@ -295,13 +314,11 @@
           <span class="date">(September 2024)</span>
         </li>
         <li>
-          <a href="https://github.com/lijuuu/Netflix-React-Firebase">Netflix-React-Firebase</a>: Netflix Clone with
-          React and Firebase
+          <a href="https://github.com/lijuuu/Netflix-React-Firebase">Netflix-React-Firebase</a>: Netflix Clone with React and Firebase
           <span class="date">(September 2024)</span>
         </li>
         <li>
-          <a href="https://github.com/lijuuu/LinkShortner">Link Shortener</a>: URL shortener built
-          with Go
+          <a href="https://github.com/lijuuu/LinkShortner">Link Shortener</a>: URL shortener built with Go
           <span class="date">(July 2024)</span>
         </li>
         <li>
@@ -313,53 +330,68 @@
           <span class="date">(March 2024)</span>
         </li>
         <li>
-          <a href="https://github.com/lijuuu/GoogleStore-clone">GoogleStore-clone</a>: Google Store clone built
-          with
-          HTML/CSS
+          <a href="https://github.com/lijuuu/GoogleStore-clone">GoogleStore-clone</a>: Google Store clone built with HTML/CSS
           <span class="date">(March 2024)</span>
         </li>
         <li>
-          <a href="https://github.com/lijuuu/ERC20_Tokens_Batch_Sell">ERC20_Tokens_Batch_Sell</a>: Batch sell ERC20
-          tokens
+          <a href="https://github.com/lijuuu/ERC20_Tokens_Batch_Sell">ERC20_Tokens_Batch_Sell</a>: Batch sell ERC20 tokens
           <span class="date">(March 2024)</span>
+        </li>
+      </ul>
+    </div>
+
+    <!-- Open Source Contributions Section -->
+    <div>
+      <h2>Open Source Contributions</h2>
+      <ul>
+        <li>
+          <span class="contrib-item">
+            <a href="https://github.com/speedyapply/JobSpy/pull/259">JobSpy - Job Scraper Tool (1.3k+ Stars)</a>
+          </span>: Enhanced job data collection by adding scraping support for naukri.com.
+          <span class="date">(March 2025)</span>
+        </li>
+      </ul>
+    </div>
+
+    <!-- Accomplishments Section -->
+    <div>
+      <h2>Accomplishments</h2>
+      <ul>
+        <li>
+          <span class="accomplish-item">Top 1% in Outlier UI Hackathon</span>: Finished in the top 1% among 1200+ submissions, earning an opportunity to collaborate on innovative projects.
         </li>
       </ul>
     </div>
 
     <!-- Medium Articles Section -->
     <div>
-      <h2>Medium Articles:</h2>
+      <h2>Medium Articles</h2>
       <ul>
         <li>
-          <a
-            href="https://medium.com/@lijuthomasliju03/diffie-hellman-key-exchange-with-aes-a-secure-communication-64ee73e1c41d">
+          <a href="https://medium.com/@lijuthomasliju03/diffie-hellman-key-exchange-with-aes-a-secure-communication-64ee73e1c41d">
             Diffie-Hellman Key Exchange with AES: A Secure Communication</a>:
           Ensuring the privacy and security of data transmission in today's interconnected world.
           <span class="date">(Nov 30, 2024)</span>
         </li>
         <li>
-          <a
-            href="https://medium.com/@lijuthomasliju03/building-a-sandboxed-code-execution-engine-using-golang-and-docker-220fd4a081c8">
+          <a href="https://medium.com/@lijuthomasliju03/building-a-sandboxed-code-execution-engine-using-golang-and-docker-220fd4a081c8">
             Building a Sandboxed Code Execution Engine Using Golang and Docker</a>:
           Safely executing code from thousands of users on online coding platforms.
           <span class="date">(Nov 2, 2024)</span>
         </li>
         <li>
-          <a
-            href="https://medium.com/@lijuthomasliju03/understanding-and-solving-the-hydration-error-and-fouc-issue-in-next-js-9da430a8ea27">
+          <a href="https://medium.com/@lijuthomasliju03/understanding-and-solving-the-hydration-error-and-fouc-issue-in-next-js-9da430a8ea27">
             Understanding and Solving the Hydration Error and FOUC Issue in Next.js</a>:
           Addressing common challenges in server-rendered applications.
           <span class="date">(Oct 27, 2024)</span>
         </li>
         <li>
-          <a
-            href="https://medium.com/@lijuthomasliju03/denos-approach-to-simplicity-aligning-with-go-s-philosophy-487a48fa3d2b">
+          <a href="https://medium.com/@lijuthomasliju03/denos-approach-to-simplicity-aligning-with-go-s-philosophy-487a48fa3d2b">
             Simplicity in Deno</a>: Approach to simplicity aligning with Go's philosophy
           <span class="date">(October 2024)</span>
         </li>
         <li>
-          <a
-            href="https://medium.com/@lijuthomasliju03/unveiling-the-power-of-sha-256-hashing-in-blockchain-6b189dc4a6d8">
+          <a href="https://medium.com/@lijuthomasliju03/unveiling-the-power-of-sha-256-hashing-in-blockchain-6b189dc4a6d8">
             SHA256 in Blockchain</a>: Unveiling the Power of SHA-256 Hashing in Blockchain
           <span class="date">(May 2023)</span>
         </li>
@@ -368,7 +400,7 @@
 
     <!-- Documentation Section -->
     <div>
-      <h2>Project Documentation:</h2>
+      <h2>Project Documentation</h2>
       <ul>
         <li>
           <a href="https://documenter.getpostman.com/view/32055383/2sA3e488Sh">FoodBuddy</a>:
@@ -378,13 +410,11 @@
       </ul>
     </div>
 
-
     <!-- Social Media Section -->
     <div class="social-media">
-      <h2>Connect with me:</h2>
+      <h2>Connect with me</h2>
       <ul>
-        <li><a href="https://www.linkedin.com/in/liju-thomas-13ba6524b/" target="_blank"><i
-              class="fab fa-linkedin"></i></a></li>
+        <li><a href="https://www.linkedin.com/in/liju-thomas-13ba6524b/" target="_blank"><i class="fab fa-linkedin"></i></a></li>
         <li><a href="https://github.com/lijuuu" target="_blank"><i class="fab fa-github"></i></a></li>
         <li><a href="https://www.instagram.com/lijuthomas__/" target="_blank"><i class="fab fa-instagram"></i></a></li>
         <li><a href="https://twitter.com/lijuthomas_" target="_blank"><i class="fab fa-twitter"></i></a></li>
@@ -398,14 +428,12 @@
     const readLessButton = document.getElementById('read-less');
     const extendedBio = document.querySelector('.extended-bio');
 
-    // Show extended bio when "Read More" is clicked
     readMoreButton.addEventListener('click', function () {
       extendedBio.style.display = 'block';
       readMoreButton.style.display = 'none';
       readLessButton.style.display = 'inline';
     });
 
-    // Hide extended bio when "Read Less" is clicked
     readLessButton.addEventListener('click', function () {
       extendedBio.style.display = 'none';
       readMoreButton.style.display = 'inline';
